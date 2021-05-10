@@ -19,34 +19,21 @@ export default {
       data: {
         labels: this.label,
         datasets: [{
-            label: '累積陽性者数',
-            backgroundColor: 'rgba(144,238,144 , 0.9 )',
-            borderWidth: 0.5,
-            data: this.chartData,
+          label: '累積陽性者数',
+          backgroundColor: 'rgba(144,238,144 , 0.9 )',
+          data: this.chartData,
         }]
       },
       options: {
         responsive: true,
-        legend: {
-          display: true
-        },
-        tooltips: {
-          display:true
-        },
         scales: {
-          xAxes: [{
-            ticks: {
-              suggestedMin: 0,
-            }
-          }],
           yAxes: [{
             ticks: {
               beginAtZero: true,
-              
             }
           }]
         }
-    }
+      }
     });
   }
 }

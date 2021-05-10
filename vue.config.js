@@ -2,8 +2,8 @@ module.exports = {
   // devServer:{
   //   proxy:'https://opendata.corona.go.jp/api/'
   // },
-  publicPath: './', //相対パス
-  // publicPath: '/covid19-app/', 
+  // publicPath: './', //相対パス
+  publicPath: '/covid-19_app/', 
   chainWebpack: config => {
     config.plugin('html').tap(options => {
       options[0].minify = {

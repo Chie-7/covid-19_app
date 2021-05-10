@@ -8,6 +8,7 @@ import basecss from './assets/css/style.css'
 
 Vue.config.productionTip = false
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCmOKxAcxt-mlzlIktjV10Xtw0ElMD7Ymk",
   authDomain: "my-cli-project-a924c.firebaseapp.com",

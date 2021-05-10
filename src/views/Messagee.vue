@@ -75,10 +75,6 @@ export default {
   },
   methods: {
     // ログイン処理
-    // doLogin() {
-    //   const provider = new firebase.auth.TwitterAuthProvider()
-    //   firebase.auth().signInWithPopup(provider)
-    // },
     doLogin() {
       var provider = new firebase.auth.GoogleAuthProvider()
       firebase.auth().signInWithPopup(provider)
