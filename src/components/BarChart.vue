@@ -1,5 +1,8 @@
 <template>
-  <canvas ref="myChart" width="900px" height="250px"></canvas>
+  <!-- <canvas ref="myChart" width="900px" height="250px"></canvas> -->
+  <div class="chart-container" style="position: relative; width: 100%; height: 400px;">
+  <canvas ref="myChart"></canvas>
+  </div>
 </template>
 
 <script>
@@ -25,7 +28,7 @@ export default {
         }]
       },
       options: {
-        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           yAxes: [{
             ticks: {
